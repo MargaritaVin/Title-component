@@ -9,11 +9,11 @@ function App() {
     setOpened(true);
   };
 
-  if(!isOpened) {
-    return <button onClick={handleClick}>Open title</button>;
+  if(isOpened) {
+    return <Title name="You opened title" type="normal"/>;
   }
 
-  return <Title name="You opened title" type="normal"/>;
+  return <button onClick={handleClick}>Open title</button>;
   
   // return (
   //   <div>
